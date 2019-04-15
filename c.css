@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #e3f3ff;
+    display: flex;
+    align-items: center;
+    border: 2px solid #b3deff;
+    color: #b3deff;
+    justify-content: space-between;
+}
+
+.search-box{
+    background-color: #b3deff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-button{
+    color: #b3deff;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e3f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt{
+    background: none;
+    outline: none;
+    border: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover > .search-txt{
+    width: 330px;
+}
+
+.search-box:hover > .search-button{
+    background-color: white;
+}
+
+#name_of_the_shop{
+    font-family: 'Teko', sans-serif;
+    padding-left: 330px;
+    padding-right: 330px;
+    font-size: 60px; 
+    transition: 0.4s;
+}
+
+.menu-button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #e3f3ff;
+    border-radius: 50%;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+
+span{
+    position: block;
+    height: 4px;
+    width: 30px;
+    background-color: #b3deff;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.menu-box{
+    background-color: #b3deff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+}
+
+.menu-box:hover > .menu-button{
+    background-color: #fff;
+}
+
+
+.menu-ul{
+    background: none;
+    outline: none;
+    border: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-box:hover > .menu-ul{
+    width: 330px;
+}
+
+.menu-box:hover > .menu-button > .c1{
+    transform: translateX(12px) translateY(4px) rotate(35deg);
+    width: 13px;
+    transform-origin: left top;
+}
+
+.menu-box:hover > .menu-button > .c3{
+    transform: translateX(12px) translateY(-4px) rotate(-35deg);
+    width: 13px;
+    transform-origin: left bottom;
+}
+
+
+.menu-box > .menu-ul > a{
+    display: none;
+    color: white;
+}
+
+
+.menu-box:hover > .menu-ul > a{
+    display: block;
+}
